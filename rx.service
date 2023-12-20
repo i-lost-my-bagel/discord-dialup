@@ -1,0 +1,9 @@
+[Unit]
+Description=Minimodem RX
+
+[Service]
+ExecStart=/usr/bin/minimodem --rx -q 1800
+StandardError=journal
+StandardInput=socket
+StandardOutput=socket
+Type=simple

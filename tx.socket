@@ -1,0 +1,5 @@
+[Unit]
+Description=Socket to communicate with myservice
+
+[Socket]
+ListenFIFO=/tmp/modem.socket

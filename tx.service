@@ -1,0 +1,9 @@
+[Unit]
+Description=Minimodem TX
+
+[Service]
+ExecStart=/usr/bin/minimodem --tx -q --tx-carrier 2100
+StandardError=journal
+StandardInput=socket
+StandardOutput=socket
+Type=simple
